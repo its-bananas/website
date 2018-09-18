@@ -12,7 +12,7 @@
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-resolve-src": "^1.0.0",
     "gatsby-plugin-sass": "^1.0.15",
-    "gatsby-plugin-sitemap": "^1.2.9",
+    "gatsby-plugin-sitemap": "^2.0.1",
     "gatsby-plugin-svgr": "^1.0.0",
     "mo-js": "0.288.2",
     "react-helmet": "^5.2.0",
