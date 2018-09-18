@@ -7,7 +7,7 @@
     "gatsby": "^1.9.153",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-favicon": "^2.1.1",
-    "gatsby-plugin-google-analytics": "^1.0.15",
+    "gatsby-plugin-google-analytics": "^2.0.5",
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-resolve-src": "^1.0.0",
