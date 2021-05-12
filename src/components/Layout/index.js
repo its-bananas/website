@@ -1,7 +1,7 @@
-import React from 'react';
-import Navigation from '../Navigation';
+import React from "react";
+import Navigation from "../Navigation";
 
-import './layout.scss';
+import "./layout.scss";
 
 const TemplateWrapper = ({ children }) => (
   <main>

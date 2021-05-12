@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-scroll';
+import React from "react";
+import { Link } from "react-scroll";
 
-import './Footer.scss';
+import "./Footer.scss";
 
 const Footer = () => (
   <section className="Footer-padding">

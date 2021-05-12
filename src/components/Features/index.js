@@ -1,8 +1,8 @@
-import React from 'react';
-import bananaDrinkImage from './banana-drink.png';
-import bananaPeelImage from './banana-peel.png';
-import bananaIconImage from './banana-icon.svg';
-import './Features.scss';
+import React from "react";
+import bananaDrinkImage from "./banana-drink.png";
+import bananaPeelImage from "./banana-peel.png";
+import bananaIconImage from "./banana-icon.svg";
+import "./Features.scss";
 
 const Features = ({ title, subtitle, features }) => (
   <section className="Features page-section">

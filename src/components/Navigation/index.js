@@ -1,8 +1,9 @@
-import React from 'react';
-import { Link } from 'react-scroll';
-import Logo from '../Icon/Banana';
+import React from "react";
+import { Link } from "react-scroll";
+import Logo from "../Icon/Banana";
+import AnimateIcon from "../Icon/AnimatedIcon";
 
-import './Navigation.scss';
+import "./Navigation.scss";
 
 const Navigation = () => (
   <header className="Navigation">
@@ -30,9 +31,11 @@ const Navigation = () => (
       >
         Features
       </Link>
-      <a className="Navigation--signup" href="https://itsbananas.slack.com">
-        Join Now
-      </a>
+      <AnimateIcon delay={1600}>
+        <a className="Navigation--signup" href="https://itsbananas.slack.com">
+          Join Now
+        </a>
+      </AnimateIcon>
     </nav>
   </header>
 );

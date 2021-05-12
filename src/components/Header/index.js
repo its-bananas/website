@@ -1,6 +1,6 @@
-import React from 'react';
-import bananaHeaderImage from './banana-header.png';
-import './Header.scss';
+import React from "react";
+import bananaHeaderImage from "./banana-header.png";
+import "./Header.scss";
 
 const Header = ({ title, subtitle }) => (
   <section className="Main-header page-section">

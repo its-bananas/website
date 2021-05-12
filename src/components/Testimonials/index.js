@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-// import { TransitionGroup } from 'react-transition-group';
-import './Testimonials.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import { TransitionGroup } from "react-transition-group";
+import "./Testimonials.scss";
 
-import LeftArrow from '../Icon/LeftArrow';
-import RightArrow from '../Icon/RightArrow';
+import LeftArrow from "../Icon/LeftArrow";
+import RightArrow from "../Icon/RightArrow";
 
 export default class extends React.Component {
   static propTypes = {
@@ -15,7 +15,6 @@ export default class extends React.Component {
 
   constructor(props) {
     super(props);
-    this.animationTime = 1500;
     this.state = {
       testimonialIndex: 0,
       currentTestimonial: props.testimonials[0],
@@ -49,7 +48,12 @@ export default class extends React.Component {
       <section className="Testimonials page-section">
         <h1 className="section--title">{this.props.title}</h1>
         <h3 className="section--subtitle">{this.props.subtitle}</h3>
-        <article className="Testimonials--block-wrapper">
+        <TransitionGroup
+          className="Testimonials--block-wrapper"
+          component="article"
+          classNames="Testimonials--fade"
+          timeout={{ enter: 1500, exit: 1500 }}
+        >
           <blockquote
             className="Testimonials--block"
             key={testimonial.author.name}
@@ -83,7 +87,7 @@ export default class extends React.Component {
               <RightArrow />
             </button>
           </blockquote>
-        </article>
+        </TransitionGroup>
       </section>
     );
   }

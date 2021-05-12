@@ -1,11 +1,11 @@
-import React from 'react';
-import { Element } from 'react-scroll';
-import Layout from '../components/Layout';
-import copy from '../core/copy';
-import Header from '../components/Header';
-import Testimonials from '../components/Testimonials';
-import Features from '../components/Features';
-import Footer from '../components/Footer';
+import React from "react";
+import { Element } from "react-scroll";
+import Layout from "../components/Layout";
+import Header from "../components/Header";
+import Testimonials from "../components/Testimonials";
+import Features from "../components/Features";
+import Footer from "../components/Footer";
+import copy from "../core/copy";
 
 const IndexPage = () => (
   <Layout>

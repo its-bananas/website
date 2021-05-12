@@ -1,5 +1,5 @@
-import React from 'react';
-import './ComingSoon.scss';
+import React from "react";
+import "./ComingSoon.scss";
 
 const ComingSoon = () => (
   <section className="Coming page-section">

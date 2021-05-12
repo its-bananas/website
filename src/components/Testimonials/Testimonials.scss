@@ -1,4 +1,4 @@
-@import '../../core/variables.scss';
+@import "../../core/variables.scss";
 
 .Testimonials {
   padding-top: 37px;
@@ -22,7 +22,7 @@
     padding: 30px 50px;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       background-color: $body-bg;
       height: 100%;
@@ -70,7 +70,8 @@
   left: 50%;
   transform: translateX(-50%);
 
-  .Testimonials--quote, .Testimonials--author-name {
+  .Testimonials--quote,
+  .Testimonials--author-name {
     transform: translateX(30px);
     opacity: 0;
   }
@@ -84,13 +85,15 @@
   .Testimonials--quote {
     transform: translateX(0);
     opacity: 1;
-    transition: opacity 300ms ease 500ms, transform 300ms cubic-bezier(.56, .22, .36, 1.27) 500ms;
+    transition: opacity 300ms ease 500ms,
+      transform 300ms cubic-bezier(0.56, 0.22, 0.36, 1.27) 500ms;
   }
 
   .Testimonials--author-name {
     transform: translateX(0);
     opacity: 1;
-    transition: opacity 300ms ease 600ms, transform 300ms cubic-bezier(.56, .22, .36, 1.27) 600ms;
+    transition: opacity 300ms ease 600ms,
+      transform 300ms cubic-bezier(0.56, 0.22, 0.36, 1.27) 600ms;
   }
 
   .Testimonials--author-image {
@@ -99,12 +102,13 @@
   }
 }
 
-.Testimonials--fade-leave {
+.Testimonials--fade-exit {
   &:before {
     background-color: transparent;
   }
 
-  .Testimonials--quote, .Testimonials--author-name {
+  .Testimonials--quote,
+  .Testimonials--author-name {
     transform: translateX(0);
     opacity: 1;
   }
@@ -114,17 +118,19 @@
   }
 }
 
-.Testimonials--fade-leave.Testimonials--fade-leave-active {
+.Testimonials--fade-exit.Testimonials--fade-exit-active {
   .Testimonials--quote {
     transform: translateX(-50px);
     opacity: 0;
-    transition: opacity 300ms ease, transform 300ms cubic-bezier(.56, .22, .36, 1.27);
+    transition: opacity 300ms ease,
+      transform 300ms cubic-bezier(0.56, 0.22, 0.36, 1.27);
   }
 
   .Testimonials--author-name {
     transform: translateX(-50px);
     opacity: 0;
-    transition: opacity 300ms ease 100ms, transform 400ms cubic-bezier(.56, .22, .36, 1.27) 200ms;
+    transition: opacity 300ms ease 100ms,
+      transform 400ms cubic-bezier(0.56, 0.22, 0.36, 1.27) 200ms;
   }
 
   .Testimonials--author-image {
